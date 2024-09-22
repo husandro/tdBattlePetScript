@@ -116,7 +116,7 @@ do
 end
 
 function Snippets:Check(line)
-    local list, column = {}
+    local list, column = {}, nil
     local condition = line:match('[[&]%s*([^&[]+)$')
 
     if condition then
